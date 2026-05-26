@@ -1,12 +1,9 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// GitHub Pages project sites live at: https://<user>.github.io/<repo-name>/
-const repoName = process.env.GITHUB_REPOSITORY?.split('/')[1];
-const base = repoName ? `/${repoName}/` : '/';
-
+// Relative paths work on GitHub Pages without knowing your repo name
 export default defineConfig({
-  base,
+  base: './',
   plugins: [react()],
   server: {
     port: 5173,
