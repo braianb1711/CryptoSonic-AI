@@ -213,44 +213,6 @@ Shows entry / target / stop again and links to **Binance**, **Coinbase**, and **
 
 ---
 
-## Put it online with GitHub Pages (free website)
-
-**Visitors do NOT need Node.js.** Only you need Node on your computer once, to push code to GitHub. GitHub builds the site for you in the cloud.
-
-### How it works (simple)
-
-| Who | Needs Node? |
-|-----|-------------|
-| **You** (uploading / updating the site) | Only on your PC to test locally — GitHub Actions builds it when you push |
-| **Anyone opening your website** | No — they just use Chrome/Safari like any normal site |
-
-GitHub Pages hosts **static files** (HTML, JS, CSS). Your app runs **in the visitor’s browser** and loads live prices from Binance over the internet.
-
-### Steps to publish
-
-1. Create a repo on [GitHub](https://github.com) (e.g. name it `Bitcoin` or `cryptopulse-ai`).
-2. Upload this project (or use Git → `git push`).
-3. On GitHub: **Settings → Pages → Build and deployment → Source** → choose **GitHub Actions**.
-4. Push to the `main` branch. The workflow in `.github/workflows/deploy.yml` runs automatically.
-5. After 1–2 minutes, your site is live at:
-
-   **`https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/`**
-
-   Example: `https://johndoe.github.io/Bitcoin/`
-
-> If your repo is named `YOUR-USERNAME.github.io` (special user site), the URL is just `https://YOUR-USERNAME.github.io/` — ask if you need help with that case.
-
-### If the site looks broken (blank page)
-
-- Make sure the repo name in the URL matches your GitHub repo name exactly.
-- Open the browser **Developer Tools → Console** (F12) and check for errors.
-
-### Will live data work online?
-
-**Usually yes.** The app talks to Binance from the browser. Some countries or school networks block Binance — then charts won’t load (same as any crypto site).
-
----
-
 ## Is this guaranteed to make money?
 
 **No.**
